@@ -1,12 +1,13 @@
 // Initializes the `book` service on path `/book`
 const { Book } = require('./book.class');
-const createModel = require('../../models/book.model');
+// const createModel = require('../../models/book.model');
 const hooks = require('./book.hooks');
 
 module.exports = function (app) {
   const options = {
-    Model: createModel(app),
-    paginate: app.get('paginate')
+    Model: app.get('knexClient'),
+    // Model: createModel(app),
+    paginate: app.get('paginate'),
   };
 
   // Initialize our service with any options it requires

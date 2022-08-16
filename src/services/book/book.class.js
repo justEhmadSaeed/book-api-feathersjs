@@ -4,7 +4,7 @@ exports.Book = class Book extends Service {
   constructor(options) {
     super({
       ...options,
-      name: 'book'
+      name: 'books',
     });
   }
 };

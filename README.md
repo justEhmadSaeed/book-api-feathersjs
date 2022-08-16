@@ -9,8 +9,8 @@ This project uses [Feathers](http://feathersjs.com). An open source web framewor
 ## Installation
 
 - Clone the repository.
-- Install [PostgreSQL server](https://www.postgresql.org/download/) and create a DB with name `book_feathers`.
-- Make an environment variable of `DATABASE_STRING`.
+- Install [PostgreSQL server](https://www.postgresql.org/download/) and create a database.
+- Make an environment variable of `DATABASE_STRING` in .env file and store your connection string inside it.
 - Install npm packages
 
 ```
@@ -18,6 +18,13 @@ This project uses [Feathers](http://feathersjs.com). An open source web framewor
 npm install
 # yarn
 yarn
+```
+
+- Install knex CLI globally.
+- Run the following command to migrate the table schema:
+
+```
+knex migrate:latest
 ```
 
 - Run backend server by the following commands:
