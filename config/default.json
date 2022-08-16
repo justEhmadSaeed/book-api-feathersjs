@@ -8,6 +8,6 @@
   },
   "postgres": {
     "client": "pg",
-    "connection": "postgres://postgres:@localhost:5432/book_feathers"
+    "connection": "DATABASE_STRING"
   }
 }

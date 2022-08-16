@@ -9,7 +9,8 @@ This project uses [Feathers](http://feathersjs.com). An open source web framewor
 ## Installation
 
 - Clone the repository.
-- Install PostgreSQL server and create a DB with name `book_feathers`.
+- Install [PostgreSQL server](https://www.postgresql.org/download/) and create a DB with name `book_feathers`.
+- Make an environment variable of `DATABASE_STRING`.
 - Install npm packages
 
 ```
