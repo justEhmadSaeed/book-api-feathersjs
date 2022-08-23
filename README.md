@@ -9,58 +9,62 @@ This project uses [Feathers](http://feathersjs.com). An open source web framewor
 ## Installation
 
 - Clone the repository.
-- Install [PostgreSQL server](https://www.postgresql.org/download/) and create a database.
+- Install [PostgreSQL App](https://postgresapp.com/downloads.html) and create a database.
 - Make an environment variable of `DATABASE_STRING` in .env file and store your connection string inside it.
 - Install npm packages
 
-```bash
-# npm
-npm install
-# yarn
-yarn
-```
+  ```bash
+  # npm
+  npm install
+  # yarn
+  yarn
+  ```
 
 - Install knex CLI globally.
+  ```bash
+  npm install -g knex
+  # if using yarn
+  yarn global add knex
+  ```
 - Run the following command to migrate the table schema:
 
-```bash
-knex migrate:latest
-```
+  ```bash
+  knex migrate:latest
+  ```
 
 - Run backend server by the following commands:
-
-```bash
-npm run dev
-# OR
-yarn dev
-```
+  ```bash
+  npm run dev
+  # if using yarn
+  yarn dev
+  ```
 
 ## API Endpoints
 
 - Post a book
 
-```
-book
-body: {title, author}
-```
+  ```
+  book
+  body: {title, author}
+  ```
 
 - Get All books
 
-```
-book
-```
+  ```
+  book
+  ```
 
 - Get a book by Id
 
-```
-book/:bookId
-```
+  ```
+  book/:bookId
+  ```
 
 - Delete a book
 
-```
-book/:bookId
-```
+  ```
+  book/:bookId
+  ```
 
 ## Getting Started
 
