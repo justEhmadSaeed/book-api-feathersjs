@@ -13,7 +13,7 @@ This project uses [Feathers](http://feathersjs.com). An open source web framewor
 - Make an environment variable of `DATABASE_STRING` in .env file and store your connection string inside it.
 - Install npm packages
 
-```
+```bash
 # npm
 npm install
 # yarn
@@ -23,13 +23,13 @@ yarn
 - Install knex CLI globally.
 - Run the following command to migrate the table schema:
 
-```
+```bash
 knex migrate:latest
 ```
 
 - Run backend server by the following commands:
 
-```
+```bash
 npm run dev
 # OR
 yarn dev
@@ -76,7 +76,7 @@ Getting up and running is as easy as 1, 2, 3.
 
 3. Start your app
 
-   ```
+   ```bash
    npm start
    ```
 
@@ -88,7 +88,7 @@ Simply run `npm test` and all your tests in the `test/` directory will be run.
 
 Feathers has a powerful command line interface. Here are a few things it can do:
 
-```
+```bash
 $ npm install -g @feathersjs/cli          # Install Feathers CLI
 
 $ feathers generate service               # Generate a new Service
